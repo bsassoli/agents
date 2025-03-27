@@ -12,7 +12,7 @@ class LLMPrompt:
                 prompt_type: prompt_message
             }]
         }
-            
+
 class LLMAgentSystemPrompt(LLMPrompt):
     def __init__(self, system_prompt):
         super().__init__(role="developer", prompt_type="text", prompt_message=system_prompt)
